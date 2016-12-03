@@ -14,9 +14,9 @@ Summary: fast VNC viewer
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/go-vncdriver-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/go-vncdriver-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/go-vncdriver-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/go-vncdriver-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/go-vncdriver-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/go-vncdriver-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/openai/go-vncdriver-feedstock.svg?style=shield)](https://circleci.com/gh/openai/go-vncdriver-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/openai/go-vncdriver-feedstock.svg?branch=master)](https://travis-ci.org/openai/go-vncdriver-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/openai/go-vncdriver-feedstock?svg=True)](https://ci.appveyor.com/project/openai/go-vncdriver-feedstock/branch/master)
 
 Current release info
 ====================
