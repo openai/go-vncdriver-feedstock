@@ -1,1 +1,1 @@
-echo 'no-op build'
+pip install .
