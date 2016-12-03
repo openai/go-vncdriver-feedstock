@@ -1,0 +1,28 @@
+package:
+  name: go-vncdriver
+  version: 0.4.16
+
+source:
+  git_url: https://github.com/bebraw/pypandoc.git
+  git_tag: v0.4.16
+
+requirements:
+  build:
+    - python
+    - numpy
+
+  run:
+    - python
+
+build:
+  script_env:
+    - PYPI_USER
+    - PYPI_PASS
+
+test:
+  imports:
+    - go_vncdriver
+
+about:
+  home: https://github.com/openai/go-vncdriver
+  summary: fast VNC viewer
