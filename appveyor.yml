@@ -9,7 +9,9 @@ environment:
   # See: http://stackoverflow.com/a/13751649/163740
   CMD_IN_ENV: "cmd /E:ON /V:ON /C obvci_appveyor_python_build_env.cmd"
 
-  
+  BINSTAR_TOKEN:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    secure: GShFlSm9Wepl6Nx35lqCZui+gA13irpKdUfic7gyMHp9hR+7hacZ5SoubTZAXzZv
 
   matrix:
     - TARGET_ARCH: x86
