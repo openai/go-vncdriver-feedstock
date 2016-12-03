@@ -1,0 +1,17 @@
+--- a/setup.py
++++ b/setup.py
+@@ -52,7 +52,7 @@ You can obtain a recent Go build from https://golang.org/doc/install. If on Ubun
+
+     def build(self):
+         os.environ['GO_VNCDRIVER_PYTHON'] = sys.executable
+-        cmd = ['make', 'build']
++        cmd = ['./build.sh']
+         try:
+             subprocess.check_call(cmd, cwd=here())
+         except subprocess.CalledProcessError as e:
+@@ -68,5 +68,4 @@ setup(name='go_vncdriver',
+       packages=['go_vncdriver'],
+       package_dir={'go_vncdriver': '.'},
+       package_data={'go_vncdriver': ['go_vncdriver.so']},
+-      setup_requires=['numpy'],
+ )

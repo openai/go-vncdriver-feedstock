@@ -6,7 +6,7 @@ source:
   git_url: https://github.com/openai/go-vncdriver.git
   git_tag: v0.4.16
   patches:
-    - skip_numpy.patch
+    - setup.patch
 
 build:
   script_env:
@@ -19,6 +19,7 @@ requirements:
     - python
     - numpy
     - setuptools
+    - libjpeg-turbo
 
   run:
     - python
