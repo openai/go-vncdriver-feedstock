@@ -4,3 +4,6 @@ travis:
 appveyor:
   secure:
     BINSTAR_TOKEN: GShFlSm9Wepl6Nx35lqCZui+gA13irpKdUfic7gyMHp9hR+7hacZ5SoubTZAXzZv
+channels:
+  targets:
+    - [jeremyschlatter, main]
