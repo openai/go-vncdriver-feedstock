@@ -9,4 +9,12 @@ tar xf go.tar.gz
 export GOROOT=$(pwd)/go
 export PATH=$GOROOT/bin:$PATH
 
-GO_VNCDRIVER_PYTHON="$PYTHON" LIBJPG="-L$PREFIX/lib -lturbojpeg" $PREFIX/bin/pip install .
+export GO_VNCDRIVER_PYTHON="$PYTHON"
+export LIBJPG="-L$PREFIX/lib -lturbojpeg"
+$PREFIX/bin/pip install .
+
+if [ -n $TWINE_USERNAME ]; then
+    echo "Building and uploading wheel to PyPI"
+    $PYTHON setup.py bdist_wheel
+    twine upload --skip-existing dist/go_vncdriver-*.whl
+fi

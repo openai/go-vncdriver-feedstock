@@ -4,13 +4,16 @@ package:
 
 source:
   git_url: https://github.com/openai/go-vncdriver.git
-  git_rev: 4e358dce043623df0a98bf4bb370f080c98e7cd7
+  git_rev: 64010a1c2a9b85df95d1bede6d26eae8fab8f221
   patches:
     - setup.patch
     - build.patch
 
 build:
   number: 0
+  script_env:
+    - TWINE_USERNAME
+    - TWINE_PASSWORD
 
 requirements:
   build:
@@ -20,6 +23,7 @@ requirements:
     - setuptools
     - libjpeg-turbo
     - curl
+    - twine
 
   run:
     - python
