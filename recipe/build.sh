@@ -9,4 +9,4 @@ tar xf go.tar.gz
 export GOROOT=$(pwd)/go
 export PATH=$GOROOT/bin:$PATH
 
-GO_VNCDRIVER_PYTHON="$PYTHON" LIBJPG="-L$PREFIX/lib -lturbojpeg" pip install .
+GO_VNCDRIVER_PYTHON="$PYTHON" LIBJPG="-L$PREFIX/lib -lturbojpeg" $PREFIX/bin/pip install .
