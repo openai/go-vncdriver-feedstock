@@ -16,5 +16,5 @@ $PREFIX/bin/pip install .
 if [ -n $TWINE_USERNAME ]; then
     echo "Building and uploading wheel to PyPI"
     $PYTHON setup.py bdist_wheel
-    twine upload --skip-existing dist/go_vncdriver-*.whl
+    twine upload --skip-existing dist/go_vncdriver-*.whl -r https://testpypi.python.org/pypi --repository-url https://testpypi.python.org/pypi
 fi
