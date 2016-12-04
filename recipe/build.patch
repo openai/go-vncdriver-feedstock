@@ -1,0 +1,13 @@
+diff --git a/build.sh b/build.sh
+index a63fcc0..2c282a6 100755
+--- a/build.sh
++++ b/build.sh
+@@ -48,7 +48,7 @@ if [ -z "${LIBJPG:-}" ]; then
+ fi
+
+ export GOPATH="$(pwd)/.build"
+-export CGO_CFLAGS="$(
++export CGO_CFLAGS="-I$PREFIX/include $(
+     ${PYTHON} -c "import numpy, sysconfig
+ print('-I{} -I{}\n'.format(numpy.get_include(), sysconfig.get_config_var('INCLUDEPY')))"
+ )"

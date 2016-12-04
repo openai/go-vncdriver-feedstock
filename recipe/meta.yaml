@@ -4,15 +4,13 @@ package:
 
 source:
   git_url: https://github.com/openai/go-vncdriver.git
-  git_tag: v0.4.16
+  git_rev: 4e358dce043623df0a98bf4bb370f080c98e7cd7
   patches:
     - setup.patch
+    - build.patch
 
 build:
-  script_env:
-    - PYPI_USER
-    - PYPI_PASS
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -20,10 +18,12 @@ requirements:
     - numpy
     - setuptools
     - libjpeg-turbo
+    - curl
 
   run:
     - python
     - numpy
+    - libjpeg-turbo
 
 test:
   imports:

@@ -4,10 +4,9 @@ if [ $ARCH = '64' ]; then
 else
     GOARCH=386
 fi
-FN=go1.7.4.$GOOS-$GOARCH.tar.gz
-wget https://storage.googleapis.com/golang/$FN
-tar xvf $FN
+curl -o go.tar.gz https://storage.googleapis.com/golang/go1.7.4.$GOOS-$GOARCH.tar.gz
+tar xvf go.tar.gz
 export GOROOT=$(pwd)/go
 export PATH=$GOROOT/bin:$PATH
 
-pip install .
+LIBJPG="-L$PREFIX/lib -lturbojpeg" pip install .
