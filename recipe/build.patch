@@ -1,7 +1,16 @@
 diff --git a/build.sh b/build.sh
-index a63fcc0..2c282a6 100755
+index a63fcc0..abaa2f7 100755
 --- a/build.sh
 +++ b/build.sh
+@@ -2,7 +2,7 @@
+
+ # Builds against your current Python version. You must have numpy installed.
+
+-set -eu
++set -eux
+
+ cd "$(dirname "$0")"
+
 @@ -48,7 +48,7 @@ if [ -z "${LIBJPG:-}" ]; then
  fi
 
